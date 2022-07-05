@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><suite name="Suite" parallel="tests">
+  <listners>
+    <listner class-name="Utilities.TestListener"/>
+  </listners>
+  <test name="iPhone11">
+    <parameter name="selenium.deviceName" value="iPhone11"/>
+    <parameter name="selenium.PlatformName" value="IPhone"/>
+    <parameter name="selenium.PlatformVersion" value="11"/>
+    <classes>
+      <class name="tests.SignInPageTests">
+        <methods>
+          <exclude name="MOB_TC001_LogIntoTreatAppWithValidCredentials"/>
+          <exclude name="MOB_TC005_ValidateTheFieldsInLogInPage"/>
+        </methods>
+      </class>
+      <class name="tests.BecomeAMemberPageTests">
+        <methods>
+          <exclude name="MOB_TC002_BecomeAMemberInTreatApp"/>
+          <exclude name="MOB_TC003_ValidateTheFiledsInBecomeAMemberLandingPage"/>
+          <exclude name="MOB_TC004_ValidateTheFieldsInBecomeAMemberPage"/>
+        </methods>
+      </class>
+      <class name="tests.ForgotPasswordPageTests">
+        <methods>
+          <exclude name="MOB_TC006_ValidateTheForgetPasswordFlow"/>
+          <exclude name="MOB_TC007_ValidateTheFieldsInForgetPasswordFlow"/>
+        </methods>
+      </class>
+      <class name="tests.UpdatePasswordPageTests">
+        <methods>
+          <include name="MOB_TC008_ValidateTheUpdatePasswordFlow"/>
+          <exclude name="MOB_TC009_ValidateTheFieldsInUpdatePasswordFlow"/>
+        </methods>
+      </class>
+      <class name="tests.EmailAddressPageTests">
+        <methods>
+          <exclude name="MOB_TC010_ValidateTheUpdateEmailAddressFlowAndFields"/>
+        </methods>
+      </class>
+      <class name="tests.ProfileDetailsPageTests">
+        <methods>
+          <exclude name="MOB_TC011_ValidateTheUpdateProfileDetails"/>
+        </methods>
+      </class>
+      <class name="tests.DiscoverPageTests">
+        <methods>
+          <exclude name="MOB_TC012_ValidateTheArticleContentInDiscoverPage"/>
+          <exclude name="MOB_TC013_ValidateTheTravelArticleContentShareInDiscoverPage"/>
+          <exclude name="MOB_TC014_ValidateTheHealthArticleContentShareInDiscoverPage"/>
+          <exclude name="MOB_TC015_ValidateTheWellnessArticleContentShareInDiscoverPage"/>
+          <exclude name="MOB_TC021_ValidateTheArticleContentByLogInAsAGuest"/>
+        </methods>
+      </class>
+      <class name="tests.MembershipPageTests">
+        <methods>
+          <exclude name="MOB_TC016_ValidateTheMembershipFlowUsingCouponCode"/>
+          <exclude name="MOB_TC017_ValidateTheMembershipFlowUsingCard"/>
+        </methods>
+      </class>
+      <class name="tests.ChatCarePageTests">
+        <methods>
+          <exclude name="MOB_TC018_ValidateChatCarePermissionsForTheUserInTreatApp"/>
+          <exclude name="MOB_TC037_ValidateChatCareLaunchPermissionsForDependentInTreatApp"/>
+        </methods>
+      </class>
+      <class name="tests.MembershipDetailsPageTests">
+        <methods>
+          <exclude name="MOB_TC019_ValidateTheUpgradeMembershipFlow"/>
+          <exclude name="MOB_TC020_ValidateTheCancelMembershipFlow"/>
+        </methods>
+      </class>
+      <class name="tests.BillingHistoryPageTests">
+        <methods>
+          <exclude name="MOB_TC022_ValidateTheBillingHistoryDetailsForTheMembershipUsingCouponCode"/>
+          <exclude name="MOB_TC023_ValidateTheBillingHistoryDetailsForTheMembershipUsingCard"/>
+        </methods>
+      </class>
+      <class name="tests.PaymentMethodsPageTests">
+        <methods>
+          <exclude name="MOB_TC024_ValidateThePaymentMethodsInMyProfile"/>
+        </methods>
+      </class>
+      <class name="tests.HealthWalletPageTests">
+        <methods>
+          <exclude name="MOB_TC025_ValidateTheHealthWalletFunctionalityForANonMemberUserInTreatApp"/>
+          <exclude name="MOB_TC026_ValidateTheHealthWalletFunctionalityForAMemberUserInTreatApp"/>
+          <exclude name="MOB_TC027_ValidateTheFieldsInHealthWalletUploadARecord"/>
+          <exclude name="MOB_TC041_ValidateTheHealthWalletFunctionalityForADependent"/>
+          <exclude name="MOB_TC047_ValidateTreatClinicRecordsEmptyStates"/>
+        </methods>
+      </class>
+      <class name="tests.AppointmentsPageTests">
+        <methods>
+          <exclude name="MOB_TC028_ValidateTheAppointmentsFunctionalityForGuestUserInTreatApp"/>
+          <exclude name="MOB_TC029_ValidateCreatingAHealthServicesAppointmentForMemberUser"/>
+          <exclude name="MOB_TC030_ValidateCreatingAHealthServicesAppointmentForAMember"/>
+          <exclude name="MOB_TC031_ValidateRescheduleAndCancelOfAHealthServiceAppointmentForAnUser"/>
+          <exclude name="MOB_TC032_ValidateTheFieldsInHealthServiceAppointmentsFlow"/>
+          <exclude name="MOB_TC033_ValidateCreatingAWellnessServicesAppointmentForAMemberAndNonMemberUser"/>
+          <exclude name="MOB_TC034_ValidateCancelOfAWellnessServiceAppointmentForAnUser"/>
+          <exclude name="MOB_TC035_ValidateTheFieldsInWellnessServiceAppointmentsFlow"/>
+          <exclude name="MOB_TC038_ValidateCreatingAHealthServicesAppointmentForADependent"/>
+          <exclude name="MOB_TC039_ValidateReschduleAndCancelOfAHealthServicesAppointmentForADependent"/>
+          <exclude name="MOB_TC040_ValidateCreateAnInvalidAppointmentsForADependent"/>
+          <exclude name="MOB_TC044_ValidateAppointmentHistoryForHealthServicesAppointment"/>
+          <exclude name="MOB_TC045_ValidateAppointmentHistoryForWellnessServicesAppointment"/>
+          <exclude name="MOB_TC046_ValidateAppointmentHistoryForDependentHealthServicesAppointment"/>
+        </methods>
+      </class>
+      <class name="tests.MyProfilePageTests">
+        <methods>
+          <exclude name="MOB_TC036_ValidateMyProfileDetailsForAnUserInTreatApp"/>
+        </methods>
+      </class>
+      <class name="tests.MyChildrenPageTests">
+        <methods>
+          <exclude name="MOB_TC042_ValidateDetailsInMyChildrenForTheDependentCreatedFromChatCare"/>
+          <exclude name="MOB_TC043_ValidateDetailsInMyChildrenForTheDependentCreatedFromHealthServices"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
